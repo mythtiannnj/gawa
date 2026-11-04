@@ -1,34 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-
-  // Sticky Header Effect
-  const header = document.querySelector('header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)';
-    } else {
-      header.style.boxShadow = 'none';
-    }
-  });
-
-  // Smooth Scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  const form = document.getElementById('applicationForm');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth'
+      const btn = document.getElementById('submitBtn');
+      const msg = document.getElementById('formMsg');
+      
+      btn.textContent = 'Submitting...';
+      btn.disabled = true;
+
+      const data = {
+        fullname: document.getElementById('fullname').value,
+        email: document.getElementById('email').value,
+        course: document.getElementById('course').value
+      };
+
+      try {
+        const res = await fetch('/api/apply', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
         });
+        const result = await res.json();
+        
+        if (res.ok) {
+          msg.innerHTML = `<span style="color:green">${result.message}</span>`;
+          form.reset();
+        } else {
+          msg.innerHTML = `<span style="color:red">${result.error}</span>`;
+        }
+      } catch (err) {
+        msg.innerHTML = `<span style="color:red">Network error. Try again.</span>`;
+      } finally {
+        btn.textContent = 'Submit Application';
+        btn.disabled = false;
       }
     });
-  });
+  }
 });
