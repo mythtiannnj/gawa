@@ -3,38 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Nolan Institute</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>About Us | Nolan Institute of Technology</title>
+  <link rel="icon" type="image/jpeg" href="https://i.imgur.com/ySwYXym.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header>
     <div class="nav-container">
-      <div class="logo"><div class="logo-icon">N</div><div><h1>NOLAN</h1></div></div>
+      <a href="index.html" class="logo">
+        <img src="https://i.imgur.com/ySwYXym.jpeg" alt="NITI Logo">
+        <div class="logo-text"><h1>NOLAN</h1><span>Institute of Technology</span></div>
+      </a>
+      <button class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="campus.html">Campus</a>
-        <a href="admissions.html" class="btn-apply">Enroll Now</a>
+        <a href="programs.html">Programs</a>
+        <a href="campus.html">Campuses</a>
       </nav>
     </div>
   </header>
 
-  <div style="padding: 10rem 2rem 4rem; background: var(--primary); color: white; text-align: center;">
-    <h1 style="font-size: 3rem;">About Us</h1>
-    <p style="color: var(--accent); margin-top: 1rem;">Learn. Innovate. Excel.</p>
-  </div>
+  <!-- PAGE HEADER -->
+  <section style="padding: 10rem 2rem 4rem; background: var(--primary); text-align: center; color: white;">
+    <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); color: white; margin-bottom: 1rem;">About NITI</h1>
+    <p style="color: var(--accent); font-size: 1.1rem;">The NITIAN Identity</p>
+  </section>
 
+  <!-- VISION, MISSION & CORE VALUES -->
   <section class="container">
-    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-      <h2 class="section-title">Our Vision</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.1rem;">Nolan Institute of Technology is dedicated to providing top-tier education, fostering innovation, and producing globally competitive graduates.</p>
-      <img src="https://i.imgur.com/WYOLYW2.jpeg" alt="President" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-      <p style="margin-top: 1rem; font-style: italic;">"Together, we shape a brighter tomorrow."<br><strong>- Nolan, University President</strong></p>
+    <div class="vm-grid">
+      <div class="vm-card">
+        <h3>Our Vision</h3>
+        <p>To be a globally recognized premier institution in technology and innovation, shaping leaders who create sustainable solutions for a rapidly evolving world.</p>
+      </div>
+      
+      <div class="vm-card">
+        <h3>Our Mission</h3>
+        <p>To provide top-tier, accessible education through cutting-edge facilities, world-class faculty, and industry partnerships, ensuring every NITIAN is equipped to excel in their chosen field.</p>
+      </div>
+
+      <div class="core-values">
+        <h3>Core Values of a NITIAN</h3>
+        <div class="cv-grid">
+          <div class="cv-item"><i class="fas fa-lightbulb"></i> Innovation</div>
+          <div class="cv-item"><i class="fas fa-shield-alt"></i> Integrity</div>
+          <div class="cv-item"><i class="fas fa-users"></i> Inclusivity</div>
+          <div class="cv-item"><i class="fas fa-award"></i> Excellence</div>
+          <div class="cv-item"><i class="fas fa-globe"></i> Global Mindset</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer><p>&copy; 2024 Nolan Institute of Technology.</p></footer>
+  <footer>
+    <p>&copy; 2026 Nolan Institute of Technology. All Rights Reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
