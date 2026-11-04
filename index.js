@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ==========================================
 // Serves the config.json data (Programs, Campuses, etc.) to the frontend
 app.get('/api/data', (req, res) => {
+    // Ensure the path correctly points to the root config.json
     res.sendFile(path.join(__dirname, 'config.json'));
 });
 
