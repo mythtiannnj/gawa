@@ -3,77 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nolan Institute of Technology</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>Nolan Institute of Technology | Est. 2026</title>
+  <link rel="icon" type="image/jpeg" href="https://i.imgur.com/ySwYXym.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- NAVIGATION -->
   <header>
     <div class="nav-container">
-      <div class="logo">
-        <div class="logo-icon">N</div>
-        <div><h1>NOLAN</h1><span style="font-size:0.7rem; color:var(--accent);">INSTITUTE OF TECHNOLOGY</span></div>
-      </div>
+      <a href="index.html" class="logo">
+        <img src="https://i.imgur.com/ySwYXym.jpeg" alt="NITI Logo">
+        <div class="logo-text">
+          <h1>NOLAN</h1>
+          <span>Institute of Technology</span>
+        </div>
+      </a>
+      
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
       <nav class="nav-links">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="campus.html">Campus</a>
-        <a href="admissions.html" class="btn-apply">Enroll Now</a>
+        <a href="programs.html">Programs</a>
+        <a href="campus.html">Campuses</a>
       </nav>
     </div>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="hero">
-    <div>
+    <div class="hero-content">
+      <span class="hero-badge">EST. 2026</span>
       <h1>Build Your Future</h1>
       <p>Learn. Innovate. Excel.</p>
-      <a href="admissions.html" class="hero-btn">Apply Now</a>
+      <a href="programs.html" class="btn">Explore Programs</a>
     </div>
   </section>
 
-  <section class="container" style="background: white;">
-    <h2 class="section-title">Available Courses</h2>
-    <div class="grid-3" id="course-container">
-      <!-- Courses injected via JS or hardcoded below -->
-      <div class="card"><div class="card-icon">💻</div><h3>Information Technology</h3></div>
-      <div class="card"><div class="card-icon">⚙️</div><h3>Computer Engineering</h3></div>
-      <div class="card"><div class="card-icon">🔌</div><h3>Electronics Engineering</h3></div>
-      <div class="card"><div class="card-icon">⚡</div><h3>Electrical Engineering</h3></div>
-      <div class="card"><div class="card-icon">🏗️</div><h3>Civil Engineering</h3></div>
-      <div class="card"><div class="card-icon">🧪</div><h3>Chemical Engineering</h3></div>
-      <div class="card"><div class="card-icon">📊</div><h3>Business Administration</h3></div>
-      <div class="card"><div class="card-icon">🧮</div><h3>Accountancy</h3></div>
-      <div class="card"><div class="card-icon">🎨</div><h3>Fine Arts & Design</h3></div>
-      <div class="card"><div class="card-icon">📚</div><h3>Education</h3></div>
-    </div>
-  </section>
-
-  <section class="campus-section">
-    <div class="container">
-      <h2 class="section-title" style="color:white;">Our Campuses</h2>
-      <div class="grid-3">
-        <div>
-          <img src="https://i.imgur.com/8u9o5xx.jpeg" class="campus-img" alt="Campus">
-          <h3>Luzon Campus</h3>
-          <p style="color:var(--text-muted)">Modern facilities in the heart of the north.</p>
-        </div>
-        <div>
-          <img src="https://i.imgur.com/8u9o5xx.jpeg" class="campus-img" alt="Campus">
-          <h3>Visayas Campus (Main)</h3>
-          <p style="color:var(--text-muted)">Our flagship campus for innovation and research.</p>
-        </div>
-        <div>
-          <img src="https://i.imgur.com/8u9o5xx.jpeg" class="campus-img" alt="Campus">
-          <h3>Mindanao Campus</h3>
-          <p style="color:var(--text-muted)">A vibrant hub for tech and business leaders.</p>
-        </div>
+  <!-- QUICK HIGHLIGHTS -->
+  <section class="container">
+    <h2 class="section-title">Why Choose NITI?</h2>
+    <div class="programs-grid">
+      <div class="program-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Top-Tier Education</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">World-class faculty and modern curriculum.</p>
+      </div>
+      <div class="program-card">
+        <i class="fas fa-microscope"></i>
+        <h3>Modern Facilities</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">State-of-the-art laboratories and libraries.</p>
+      </div>
+      <div class="program-card">
+        <i class="fas fa-globe"></i>
+        <h3>Global Opportunities</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">Industry partnerships and international programs.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Nolan Institute of Technology. All Rights Reserved.</p>
+    <p>&copy; 2026 Nolan Institute of Technology. All Rights Reserved.</p>
+    <p style="margin-top: 0.5rem; color: var(--accent); font-weight: 600;">"Learn. Innovate. Excel."</p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
