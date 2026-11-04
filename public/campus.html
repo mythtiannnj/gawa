@@ -3,45 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campus | Nolan Institute</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>Our Campuses | NITI</title>
+  <link rel="icon" type="image/jpeg" href="https://i.imgur.com/ySwYXym.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header>
     <div class="nav-container">
-      <div class="logo"><div class="logo-icon">N</div><div><h1>NOLAN</h1></div></div>
+      <a href="index.html" class="logo">
+        <img src="https://i.imgur.com/ySwYXym.jpeg" alt="NITI Logo">
+        <div class="logo-text"><h1>NOLAN</h1><span>Institute of Technology</span></div>
+      </a>
+      <button class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="campus.html" class="active">Campus</a>
-        <a href="admissions.html" class="btn-apply">Enroll Now</a>
+        <a href="programs.html">Programs</a>
+        <a href="campus.html" class="active">Campuses</a>
       </nav>
     </div>
   </header>
 
-  <div style="padding: 10rem 2rem 4rem; background: var(--primary); color: white; text-align: center;">
-    <h1 style="font-size: 3rem;">Our Campuses</h1>
-  </div>
+  <!-- PAGE HEADER -->
+  <section style="padding: 10rem 2rem 4rem; background: var(--primary); text-align: center; color: white;">
+    <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); color: white; margin-bottom: 1rem;">Our Campuses</h1>
+    <p style="color: var(--accent); font-size: 1.1rem;">State-of-the-art facilities across the nation.</p>
+  </section>
 
-  <section class="container">
-    <div class="grid-3">
-      <div class="card">
-        <h3>Luzon Campus</h3>
-        <p style="margin-top: 1rem;">State-of-the-art facilities located in the northern economic hub.</p>
-      </div>
-      <div class="card">
-        <h3>Visayas Campus (Main)</h3>
-        <p style="margin-top: 1rem;">Our flagship campus, home to the largest innovation center and research labs.</p>
-      </div>
-      <div class="card">
-        <h3>Mindanao Campus</h3>
-        <p style="margin-top: 1rem;">A vibrant campus focused on sustainable engineering and agri-tech.</p>
+  <!-- CAMPUSES GRID -->
+  <section class="campus-section" style="padding: 5rem 0;">
+    <div class="container" style="padding: 0 2rem;">
+      <div class="campus-grid">
+        <!-- Luzon -->
+        <div class="campus-card">
+          <img src="https://i.imgur.com/Mm5T8Sr.jpeg" alt="Luzon Campus">
+          <div class="campus-overlay">
+            <h3>Luzon Campus</h3>
+            <p>Innovation Hub</p>
+          </div>
+        </div>
+
+        <!-- Visayas (Main) -->
+        <div class="campus-card">
+          <img src="https://i.imgur.com/jBpuKgq.jpeg" alt="Visayas Main Campus">
+          <div class="campus-overlay">
+            <h3>Visayas Campus (Main)</h3>
+            <p>Flagship Campus</p>
+          </div>
+        </div>
+
+        <!-- Mindanao -->
+        <div class="campus-card">
+          <img src="https://i.imgur.com/Fy4WIks.jpeg" alt="Mindanao Campus">
+          <div class="campus-overlay">
+            <h3>Mindanao Campus</h3>
+            <p>Tech & Business Center</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer><p>&copy; 2024 Nolan Institute of Technology.</p></footer>
+  <footer>
+    <p>&copy; 2026 Nolan Institute of Technology. All Rights Reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
