@@ -3,187 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nolan Institute of Technology | Learn. Innovate. Excel.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>Nolan Institute of Technology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- NAVIGATION -->
   <header>
     <div class="nav-container">
-      <a href="index.html" class="logo">
+      <div class="logo">
         <div class="logo-icon">N</div>
-        <div class="logo-text">
-          <h1>NOLAN</h1>
-          <span>Institute of Technology</span>
-        </div>
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="campus.html">Campus</a></li>
-          <li><a href="admissions.html" class="btn-apply">Enroll Now</a></li>
-        </ul>
+        <div><h1>NOLAN</h1><span style="font-size:0.7rem; color:var(--accent);">INSTITUTE OF TECHNOLOGY</span></div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="campus.html">Campus</a>
+        <a href="admissions.html" class="btn-apply">Enroll Now</a>
       </nav>
-      <div class="menu-toggle">☰</div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
   <section class="hero">
-    <div class="hero-content">
+    <div>
       <h1>Build Your Future</h1>
-      <h2>Learn. Innovate. Excel.</h2>
-      <p>Join a premier institution dedicated to shaping the tech leaders of tomorrow. Experience world-class education, state-of-the-art facilities, and a vibrant campus life.</p>
-      <div class="hero-buttons">
-        <a href="admissions.html" class="btn-primary">Apply for Admission</a>
-        <a href="academics.html" class="btn-secondary">Explore Programs</a>
-      </div>
+      <p>Learn. Innovate. Excel.</p>
+      <a href="admissions.html" class="hero-btn">Apply Now</a>
     </div>
   </section>
 
-  <!-- COURSES SECTION -->
-  <section class="courses-section" id="academics">
+  <section class="container" style="background: white;">
     <h2 class="section-title">Available Courses</h2>
-    <div class="courses-grid">
-      
-      <div class="course-card">
-        <div class="course-icon">💻</div>
-        <h3>Information Technology</h3>
-        <p>Master software development, cybersecurity, and cloud computing in our cutting-edge labs.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">⚙️</div>
-        <h3>Computer Engineering</h3>
-        <p>Bridge the gap between hardware and software design to build intelligent systems.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">🔌</div>
-        <h3>Electronics Engineering</h3>
-        <p>Design the microchips, circuits, and IoT devices that power the modern world.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">⚡</div>
-        <h3>Electrical Engineering</h3>
-        <p>Focus on power generation, renewable energy systems, and advanced electrical grids.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">🏗️</div>
-        <h3>Civil Engineering</h3>
-        <p>Plan and construct the smart cities, infrastructure, and sustainable environments of the future.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">🧪</div>
-        <h3>Chemical Engineering</h3>
-        <p>Innovate in materials science, pharmaceuticals, and sustainable industrial processes.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">📊</div>
-        <h3>Business Administration</h3>
-        <p>Develop leadership skills to manage global enterprises and tech-driven startups.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">🧮</div>
-        <h3>Accountancy</h3>
-        <p>Become an expert in financial strategy, auditing, and corporate governance.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">🎨</div>
-        <h3>Fine Arts & Design</h3>
-        <p>Blend creativity with digital tools to shape user experiences and visual media.</p>
-      </div>
-
-      <div class="course-card">
-        <div class="course-icon">📚</div>
-        <h3>Education</h3>
-        <p>Train to become an inspiring educator and shape the minds of the next generation.</p>
-      </div>
-
+    <div class="grid-3" id="course-container">
+      <!-- Courses injected via JS or hardcoded below -->
+      <div class="card"><div class="card-icon">💻</div><h3>Information Technology</h3></div>
+      <div class="card"><div class="card-icon">⚙️</div><h3>Computer Engineering</h3></div>
+      <div class="card"><div class="card-icon">🔌</div><h3>Electronics Engineering</h3></div>
+      <div class="card"><div class="card-icon">⚡</div><h3>Electrical Engineering</h3></div>
+      <div class="card"><div class="card-icon">🏗️</div><h3>Civil Engineering</h3></div>
+      <div class="card"><div class="card-icon">🧪</div><h3>Chemical Engineering</h3></div>
+      <div class="card"><div class="card-icon">📊</div><h3>Business Administration</h3></div>
+      <div class="card"><div class="card-icon">🧮</div><h3>Accountancy</h3></div>
+      <div class="card"><div class="card-icon">🎨</div><h3>Fine Arts & Design</h3></div>
+      <div class="card"><div class="card-icon">📚</div><h3>Education</h3></div>
     </div>
   </section>
 
-  <!-- CAMPUS PREVIEW SECTION -->
-  <section class="features-section">
-    <h2 class="section-title">A Campus Built for Success</h2>
-    <div class="features-grid">
-      
-      <div class="feature-item">
-        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Library" class="feature-img">
-        <h3>Modern Library</h3>
-        <p>Access thousands of digital and physical resources in a quiet, focused environment.</p>
-      </div>
-
-      <div class="feature-item">
-        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Innovation Center" class="feature-img">
-        <h3>Innovation Center</h3>
-        <p>Collaborate on groundbreaking projects using our state-of-the-art laboratories and tech hubs.</p>
-      </div>
-
-      <div class="feature-item">
-        <img src="https://images.unsplash.com/photo-1576016770956-debb63d9008d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sports Complex" class="feature-img">
-        <h3>Sports Complex</h3>
-        <p>Maintain a healthy balance with our fully equipped gym, courts, and athletic fields.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CALL TO ACTION -->
-  <section class="cta-banner">
-    <h2>Be Part of the Nolan Family</h2>
-    <p>Enrollment is now open for the upcoming semester. Secure your spot today.</p>
-    <a href="admissions.html" class="btn-primary">Enroll Now</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-col">
-        <div class="logo" style="margin-bottom: 1rem;">
-          <div class="logo-icon">N</div>
-          <div class="logo-text">
-            <h1 style="color: white;">NOLAN</h1>
-            <span>Institute of Technology</span>
-          </div>
+  <section class="campus-section">
+    <div class="container">
+      <h2 class="section-title" style="color:white;">Our Campuses</h2>
+      <div class="grid-3">
+        <div>
+          <img src="https://i.imgur.com/8u9o5xx.jpeg" class="campus-img" alt="Campus">
+          <h3>Luzon Campus</h3>
+          <p style="color:var(--text-muted)">Modern facilities in the heart of the north.</p>
         </div>
-        <p style="color: #94a3b8; font-size: 0.9rem;">A premier institution for a smarter, brighter tomorrow. Providing top-tier education and global opportunities.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="campus.html">Campus Life</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <ul>
-          <li>📍 123 Innovation Drive, Tech City</li>
-          <li>📞 +1 (555) 019-8372</li>
-          <li>✉️ admissions@nolan.edu</li>
-        </ul>
+        <div>
+          <img src="https://i.imgur.com/8u9o5xx.jpeg" class="campus-img" alt="Campus">
+          <h3>Visayas Campus (Main)</h3>
+          <p style="color:var(--text-muted)">Our flagship campus for innovation and research.</p>
+        </div>
+        <div>
+          <img src="https://i.imgur.com/8u9o5xx.jpeg" class="campus-img" alt="Campus">
+          <h3>Mindanao Campus</h3>
+          <p style="color:var(--text-muted)">A vibrant hub for tech and business leaders.</p>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Nolan Institute of Technology. All Rights Reserved. | "Learn. Innovate. Excel."</p>
-    </div>
-  </footer>
+  </section>
 
-  <script src="js/main.js"></script>
+  <footer>
+    <p>&copy; 2024 Nolan Institute of Technology. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
