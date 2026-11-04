@@ -12,37 +12,70 @@
     "Global Mindset"
   ],
   "campuses": [
-    { 
-      "id": "luzon",
-      "name": "Luzon Campus", 
+    {
+      "name": "Luzon Campus",
       "tagline": "Innovation Hub",
-      "img": "https://i.imgur.com/Mm5T8Sr.jpeg" 
+      "img": "https://i.imgur.com/Mm5T8Sr.jpeg"
     },
-    { 
-      "id": "visayas",
-      "name": "Visayas Campus (Main)", 
+    {
+      "name": "Visayas Campus (Main)",
       "tagline": "Flagship Campus",
-      "img": "https://i.imgur.com/jBpuKgq.jpeg" 
+      "img": "https://i.imgur.com/jBpuKgq.jpeg"
     },
-    { 
-      "id": "mindanao",
-      "name": "Mindanao Campus", 
+    {
+      "name": "Mindanao Campus",
       "tagline": "Tech & Business Center",
-      "img": "https://i.imgur.com/Fy4WIks.jpeg" 
+      "img": "https://i.imgur.com/Fy4WIks.jpeg"
     }
   ],
   "programs": [
-    { "name": "Information Technology", "icon": "fa-laptop-code" },
-    { "name": "Computer Engineering", "icon": "fa-microchip" },
-    { "name": "Electronics Engineering", "icon": "fa-bolt" },
-    { "name": "Electrical Engineering", "icon": "fa-plug" },
-    { "name": "Civil Engineering", "icon": "fa-building" },
-    { "name": "Chemical Engineering", "icon": "fa-flask" },
-    { "name": "Mechanical Engineering", "icon": "fa-cogs" },
-    { "name": "Business Administration", "icon": "fa-chart-line" },
-    { "name": "Accountancy", "icon": "fa-calculator" },
-    { "name": "Fine Arts & Design", "icon": "fa-palette" },
-    { "name": "Education", "icon": "fa-book-open" },
-    { "name": "Nursing", "icon": "fa-heartbeat" }
+    {
+      "name": "Information Technology",
+      "icon": "fa-laptop-code"
+    },
+    {
+      "name": "Computer Engineering",
+      "icon": "fa-microchip"
+    },
+    {
+      "name": "Electronics Engineering",
+      "icon": "fa-bolt"
+    },
+    {
+      "name": "Electrical Engineering",
+      "icon": "fa-plug"
+    },
+    {
+      "name": "Civil Engineering",
+      "icon": "fa-building"
+    },
+    {
+      "name": "Chemical Engineering",
+      "icon": "fa-flask"
+    },
+    {
+      "name": "Mechanical Engineering",
+      "icon": "fa-cogs"
+    },
+    {
+      "name": "Business Administration",
+      "icon": "fa-chart-line"
+    },
+    {
+      "name": "Accountancy",
+      "icon": "fa-calculator"
+    },
+    {
+      "name": "Fine Arts & Design",
+      "icon": "fa-palette"
+    },
+    {
+      "name": "Education",
+      "icon": "fa-book-open"
+    },
+    {
+      "name": "Nursing",
+      "icon": "fa-heartbeat"
+    }
   ]
 }
