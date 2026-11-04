@@ -1,0 +1,13 @@
+{
+  "name": "nolan-institute-website",
+  "version": "1.0.0",
+  "description": "Official website for Nolan Institute of Technology",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve public",
+    "dev": "serve public"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
