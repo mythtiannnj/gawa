@@ -1,13 +1,14 @@
 {
   "name": "nolan-institute-website",
-  "version": "1.0.0",
-  "description": "Official website for Nolan Institute of Technology",
+  "version": "3.0.0",
+  "description": "Nolan Institute of Technology",
   "main": "index.js",
   "scripts": {
-    "start": "serve public",
-    "dev": "serve public"
+    "start": "node index.js",
+    "dev": "node index.js"
   },
   "dependencies": {
-    "serve": "^14.2.1"
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   }
 }
