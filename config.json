@@ -1,8 +1,17 @@
 {
   "institution": "Nolan Institute of Technology",
-  "motto": "Learn. Innovate. Excel.",
-  "contact": {
-    "email": "admissions@nolan.edu",
-    "phone": "+1 (555) 019-8372"
-  }
+  "campuses": ["Luzon", "Visayas (Main)", "Mindanao"],
+  "courses": [
+    { "name": "Information Technology", "icon": "💻" },
+    { "name": "Computer Engineering", "icon": "⚙️" },
+    { "name": "Electronics Engineering", "icon": "🔌" },
+    { "name": "Electrical Engineering", "icon": "⚡" },
+    { "name": "Civil Engineering", "icon": "🏗️" },
+    { "name": "Chemical Engineering", "icon": "🧪" },
+    { "name": "Business Administration", "icon": "📊" },
+    { "name": "Accountancy", "icon": "🧮" },
+    { "name": "Fine Arts & Design", "icon": "🎨" },
+    { "name": "Education", "icon": "📚" }
+  ],
+  "applications": []
 }
