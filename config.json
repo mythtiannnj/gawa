@@ -1,17 +1,24 @@
 {
   "institution": "Nolan Institute of Technology",
-  "campuses": ["Luzon", "Visayas (Main)", "Mindanao"],
-  "courses": [
-    { "name": "Information Technology", "icon": "💻" },
-    { "name": "Computer Engineering", "icon": "⚙️" },
-    { "name": "Electronics Engineering", "icon": "🔌" },
-    { "name": "Electrical Engineering", "icon": "⚡" },
-    { "name": "Civil Engineering", "icon": "🏗️" },
-    { "name": "Chemical Engineering", "icon": "🧪" },
-    { "name": "Business Administration", "icon": "📊" },
-    { "name": "Accountancy", "icon": "🧮" },
-    { "name": "Fine Arts & Design", "icon": "🎨" },
-    { "name": "Education", "icon": "📚" }
+  "established": 2026,
+  "motto": "Learn. Innovate. Excel.",
+  "campuses": [
+    { "name": "Luzon Campus", "img": "https://i.imgur.com/Mm5T8Sr.jpeg" },
+    { "name": "Visayas Campus (Main)", "img": "https://i.imgur.com/jBpuKgq.jpeg" },
+    { "name": "Mindanao Campus", "img": "https://i.imgur.com/Fy4WIks.jpeg" }
   ],
-  "applications": []
+  "programs": [
+    { "name": "Information Technology", "icon": "fa-laptop-code" },
+    { "name": "Computer Engineering", "icon": "fa-microchip" },
+    { "name": "Electronics Engineering", "icon": "fa-bolt" },
+    { "name": "Electrical Engineering", "icon": "fa-plug" },
+    { "name": "Civil Engineering", "icon": "fa-building" },
+    { "name": "Chemical Engineering", "icon": "fa-flask" },
+    { "name": "Mechanical Engineering", "icon": "fa-cogs" },
+    { "name": "Business Administration", "icon": "fa-chart-line" },
+    { "name": "Accountancy", "icon": "fa-calculator" },
+    { "name": "Fine Arts & Design", "icon": "fa-palette" },
+    { "name": "Education", "icon": "fa-book-open" },
+    { "name": "Nursing", "icon": "fa-heartbeat" }
+  ]
 }
