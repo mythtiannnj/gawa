@@ -4,97 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Academics | Nolan Institute</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .page-header { padding: 10rem 2rem 4rem; background: var(--primary-navy); color: white; text-align: center; }
-    .page-header h1 { font-size: 3rem; }
-    .academics-container { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
-    .dept-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem; }
-    .dept-card { background: white; border-radius: 8px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary-navy); transition: var(--transition); }
-    .dept-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-top-color: var(--accent-gold); }
-    .dept-card h3 { color: var(--primary-navy); margin-bottom: 1rem; font-size: 1.4rem; }
-    .dept-card p { color: #64748b; font-size: 0.95rem; margin-bottom: 1.5rem; }
-    .dept-list { list-style: disc; padding-left: 1.5rem; color: #475569; font-size: 0.9rem; }
-  </style>
 </head>
 <body>
   <header>
     <div class="nav-container">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">N</div>
-        <div class="logo-text"><h1>NOLAN</h1><span>Institute of Technology</span></div>
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="academics.html" class="active">Academics</a></li>
-          <li><a href="campus.html">Campus</a></li>
-          <li><a href="admissions.html" class="btn-apply">Enroll Now</a></li>
-        </ul>
+      <div class="logo"><div class="logo-icon">N</div><div><h1>NOLAN</h1></div></div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html" class="active">Academics</a>
+        <a href="campus.html">Campus</a>
+        <a href="admissions.html" class="btn-apply">Enroll Now</a>
       </nav>
-      <div class="menu-toggle">☰</div>
     </div>
   </header>
 
-  <div class="page-header">
-    <h1>Academic Programs</h1>
-    <p>Choose from a wide range of top-tier courses designed for the future.</p>
+  <div style="padding: 10rem 2rem 4rem; background: var(--primary); color: white; text-align: center;">
+    <h1 style="font-size: 3rem;">Academics</h1>
   </div>
 
-  <div class="academics-container">
-    <div class="dept-grid">
-      
-      <div class="dept-card">
-        <h3>School of Computing & IT</h3>
-        <p>Explore the forefront of digital innovation and software engineering.</p>
-        <ul class="dept-list">
-          <li>B.S. in Information Technology</li>
-          <li>B.S. in Computer Engineering</li>
-          <li>Cybersecurity Certification</li>
+  <section class="container">
+    <h2 class="section-title">Academic Programs</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>School of Computing</h3>
+        <ul style="text-align: left; margin-top: 1rem; line-height: 2;">
+          <li>• B.S. Information Technology</li>
+          <li>• B.S. Computer Engineering</li>
         </ul>
       </div>
-
-      <div class="dept-card">
+      <div class="card">
         <h3>School of Engineering</h3>
-        <p>Design and build the infrastructure and electronics of tomorrow.</p>
-        <ul class="dept-list">
-          <li>B.S. in Electrical Engineering</li>
-          <li>B.S. in Electronics Engineering</li>
-          <li>B.S. in Civil Engineering</li>
-          <li>B.S. in Chemical Engineering</li>
+        <ul style="text-align: left; margin-top: 1rem; line-height: 2;">
+          <li>• Electrical Engineering</li>
+          <li>• Electronics Engineering</li>
+          <li>• Civil Engineering</li>
+          <li>• Chemical Engineering</li>
         </ul>
       </div>
-
-      <div class="dept-card">
-        <h3>School of Business & Management</h3>
-        <p>Develop the strategic mindset needed to lead global organizations.</p>
-        <ul class="dept-list">
-          <li>B.S. in Business Administration</li>
-          <li>B.S. in Accountancy</li>
-          <li>MBA Program (Graduate)</li>
+      <div class="card">
+        <h3>School of Business & Arts</h3>
+        <ul style="text-align: left; margin-top: 1rem; line-height: 2;">
+          <li>• Business Administration</li>
+          <li>• Accountancy</li>
+          <li>• Fine Arts & Design</li>
+          <li>• Education</li>
         </ul>
       </div>
-
-      <div class="dept-card">
-        <h3>School of Arts & Education</h3>
-        <p>Foster creativity and shape the minds of future generations.</p>
-        <ul class="dept-list">
-          <li>B.A. in Fine Arts & Design</li>
-          <li>B.S. in Education</li>
-          <li>Digital Media Design</li>
-        </ul>
-      </div>
-
     </div>
-  </div>
+  </section>
 
-  <footer>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Nolan Institute of Technology. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
+  <footer><p>&copy; 2024 Nolan Institute of Technology.</p></footer>
 </body>
 </html>
