@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Programs | NITI</title>
+  <link rel="icon" type="image/jpeg" href="https://i.imgur.com/ySwYXym.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="https://i.imgur.com/ySwYXym.jpeg" alt="NITI Logo">
+        <div class="logo-text"><h1>NOLAN</h1><span>Institute of Technology</span></div>
+      </a>
+      <button class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html" class="active">Programs</a>
+        <a href="campus.html">Campuses</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="padding: 10rem 2rem 4rem; background: var(--primary); text-align: center; color: white;">
+    <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); color: white; margin-bottom: 1rem;">Academic Programs</h1>
+    <p style="color: var(--accent); font-size: 1.1rem;">Choose from a wide range of future-ready courses.</p>
+  </section>
+
+  <!-- DYNAMIC PROGRAMS GRID -->
+  <section class="container">
+    <div class="programs-grid" id="programs-grid">
+      <!-- Cards generated dynamically by main.js -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Nolan Institute of Technology. All Rights Reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
