@@ -1,54 +1,43 @@
 const express = require('express');
-const fs = require('fs');
 const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const CONFIG_PATH = path.join(__dirname, 'config.json');
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// ==========================================
+// MIDDLEWARE
+// ==========================================
+// Serves all static files (HTML, CSS, JS, Images) from the 'public' folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// API: Submit Admission Form
-app.post('/api/apply', (req, res) => {
-    const { fullname, email, course } = req.body;
-
-    if (!fullname || !email || !course) {
-        return res.status(400).json({ error: 'Please fill out all required fields.' });
-    }
-
-    // Read config, add application, save config
-    fs.readFile(CONFIG_PATH, 'utf8', (err, data) => {
-        if (err) return res.status(500).json({ error: 'Server error reading database.' });
-        
-        const config = JSON.parse(data);
-        
-        // Check for duplicate email
-        if (config.applications.some(app => app.email === email)) {
-            return res.status(400).json({ error: 'An application with this email already exists.' });
-        }
-
-        config.applications.push({ 
-            id: Date.now(), 
-            fullname, 
-            email, 
-            course, 
-            date: new Date().toISOString() 
-        });
-
-        fs.writeFile(CONFIG_PATH, JSON.stringify(config, null, 2), (writeErr) => {
-            if (writeErr) return res.status(500).json({ error: 'Server error saving application.' });
-            res.status(200).json({ success: true, message: 'Application submitted successfully!' });
-        });
-    });
+// ==========================================
+// API ROUTES
+// ==========================================
+// Serves the config.json data (Programs, Campuses, etc.) to the frontend
+app.get('/api/data', (req, res) => {
+    res.sendFile(path.join(__dirname, 'config.json'));
 });
 
-// Custom Error Pages
+// ==========================================
+// ERROR HANDLING
+// ==========================================
+// 404 Not Found (Catches any route that doesn't match static files or API)
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
 });
 
+// 500 Internal Server Error (Global Error Handler)
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).sendFile(path.join(__dirname, 'public', '500.html'));
+});
+
+// ==========================================
+// START SERVER
+// ==========================================
 app.listen(PORT, () => {
-    console.log(`🎓 Nolan Institute Server running at http://localhost:${PORT}`);
+    console.log(`==================================================`);
+    console.log(`🎓 Nolan Institute of Technology Server`);
+    console.log(`🌐 Running at: http://localhost:${PORT}`);
+    console.log(`==================================================`);
 });
