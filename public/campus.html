@@ -3,91 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campus Life | Nolan Institute</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>Campus | Nolan Institute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .page-header { padding: 10rem 2rem 4rem; background: var(--primary-navy); color: white; text-align: center; }
-    .page-header h1 { font-size: 3rem; }
-    .campus-showcase { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
-    .showcase-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-    .showcase-item { position: relative; border-radius: 8px; overflow: hidden; height: 350px; }
-    .showcase-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-    .showcase-item:hover img { transform: scale(1.05); }
-    .showcase-overlay { position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(transparent, rgba(10,25,47,0.9)); color: white; }
-    .showcase-overlay h3 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-    .showcase-overlay p { color: #cbd5e1; }
-    @media (max-width: 768px) { .showcase-grid { grid-template-columns: 1fr; } }
-  </style>
 </head>
 <body>
   <header>
     <div class="nav-container">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">N</div>
-        <div class="logo-text"><h1>NOLAN</h1><span>Institute of Technology</span></div>
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="academics.html">Academics</a></li>
-          <li><a href="campus.html" class="active">Campus</a></li>
-          <li><a href="admissions.html" class="btn-apply">Enroll Now</a></li>
-        </ul>
+      <div class="logo"><div class="logo-icon">N</div><div><h1>NOLAN</h1></div></div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="campus.html" class="active">Campus</a>
+        <a href="admissions.html" class="btn-apply">Enroll Now</a>
       </nav>
-      <div class="menu-toggle">☰</div>
     </div>
   </header>
 
-  <div class="page-header">
-    <h1>Campus Life</h1>
-    <p>Explore our state-of-the-art facilities and vibrant student community.</p>
+  <div style="padding: 10rem 2rem 4rem; background: var(--primary); color: white; text-align: center;">
+    <h1 style="font-size: 3rem;">Our Campuses</h1>
   </div>
 
-  <div class="campus-showcase">
-    <div class="showcase-grid">
-      
-      <div class="showcase-item">
-        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Library">
-        <div class="showcase-overlay">
-          <h3>Modern Library</h3>
-          <p>A quiet sanctuary for research with vast digital and print archives.</p>
-        </div>
+  <section class="container">
+    <div class="grid-3">
+      <div class="card">
+        <h3>Luzon Campus</h3>
+        <p style="margin-top: 1rem;">State-of-the-art facilities located in the northern economic hub.</p>
       </div>
-
-      <div class="showcase-item">
-        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Labs">
-        <div class="showcase-overlay">
-          <h3>State-of-the-Art Laboratories</h3>
-          <p>Fully equipped labs for computing, chemistry, and engineering.</p>
-        </div>
+      <div class="card">
+        <h3>Visayas Campus (Main)</h3>
+        <p style="margin-top: 1rem;">Our flagship campus, home to the largest innovation center and research labs.</p>
       </div>
-
-      <div class="showcase-item">
-        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Innovation Center">
-        <div class="showcase-overlay">
-          <h3>Innovation Center</h3>
-          <p>Collaborative spaces for startups, hackathons, and tech development.</p>
-        </div>
+      <div class="card">
+        <h3>Mindanao Campus</h3>
+        <p style="margin-top: 1rem;">A vibrant campus focused on sustainable engineering and agri-tech.</p>
       </div>
-
-      <div class="showcase-item">
-        <img src="https://images.unsplash.com/photo-1576016770956-debb63d9008d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sports">
-        <div class="showcase-overlay">
-          <h3>Sports Complex</h3>
-          <p>Stay active with our indoor courts, gym, and outdoor athletic fields.</p>
-        </div>
-      </div>
-
     </div>
-  </div>
+  </section>
 
-  <footer>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Nolan Institute of Technology. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
+  <footer><p>&copy; 2024 Nolan Institute of Technology.</p></footer>
 </body>
 </html>
