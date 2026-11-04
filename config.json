@@ -2,10 +2,34 @@
   "institution": "Nolan Institute of Technology",
   "established": 2026,
   "motto": "Learn. Innovate. Excel.",
+  "vision": "To be a globally recognized premier institution in technology and innovation, shaping leaders who create sustainable solutions for a rapidly evolving world.",
+  "mission": "To provide top-tier, accessible education through cutting-edge facilities, world-class faculty, and industry partnerships, ensuring every NITIAN is equipped to excel in their chosen field.",
+  "coreValues": [
+    "Innovation",
+    "Integrity",
+    "Inclusivity",
+    "Excellence",
+    "Global Mindset"
+  ],
   "campuses": [
-    { "name": "Luzon Campus", "img": "https://i.imgur.com/Mm5T8Sr.jpeg" },
-    { "name": "Visayas Campus (Main)", "img": "https://i.imgur.com/jBpuKgq.jpeg" },
-    { "name": "Mindanao Campus", "img": "https://i.imgur.com/Fy4WIks.jpeg" }
+    { 
+      "id": "luzon",
+      "name": "Luzon Campus", 
+      "tagline": "Innovation Hub",
+      "img": "https://i.imgur.com/Mm5T8Sr.jpeg" 
+    },
+    { 
+      "id": "visayas",
+      "name": "Visayas Campus (Main)", 
+      "tagline": "Flagship Campus",
+      "img": "https://i.imgur.com/jBpuKgq.jpeg" 
+    },
+    { 
+      "id": "mindanao",
+      "name": "Mindanao Campus", 
+      "tagline": "Tech & Business Center",
+      "img": "https://i.imgur.com/Fy4WIks.jpeg" 
+    }
   ],
   "programs": [
     { "name": "Information Technology", "icon": "fa-laptop-code" },
